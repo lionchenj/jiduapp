@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- set `maximum-scale` for some compatibility issues -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <!-- <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script> -->
+      <script>
+        document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+          WeixinJSBridge.call('hideToolbar');
+        });
+        // let u = window.navigator.userAgent;
+        // var iphone = u.indexOf("iphone");
+        // let url = '';
+        // if (iphone != -1) {
+        //     url = window.sessionStorage.getItem("configUrl");//获取初始化的url
+        // } else {
+        //     url = window.location.href.split('#')[0];
+        // }
+        // window.localStorage.setItem('url',url)
+      // if ("addEventListener" in document) {
+      //   document.addEventListener(
+      //     "DOMContentLoaded",
+      //     function() {
+      //       FastClick.attach(document.body);
+      //     },
+      //     false
+      //   );
+      // }
+      // if (!window.Promise) {
+      //   document.writeln(
+      //     '<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' +
+      //       ">" +
+      //       "<" +
+      //       "/" +
+      //       "script>"
+      //   );
+      // }
+      // window.WeixinJSBridge.call('hideToolbar');
+
+      // var overscroll = function(el) {
+      //   el.addEventListener('touchstart', function() {
+      //       var top = el.scrollTop
+      //       ,totalScroll = el.scrollHeight
+      //       ,currentScroll = top + el.offsetHeight;
+      //       if(top === 0) {
+      //           el.scrollTop = 1;
+      //       }else if(currentScroll === totalScroll) {
+      //           el.scrollTop = top - 1;
+      //       }
+      //   });
+    
+      //   el.addEventListener('touchmove', function(evt) {
+      //   if(el.offsetHeight < el.scrollHeight)
+      //       evt._isScroller = true;
+      //   });
+      // }
+      // overscroll(document.querySelector('.scroll'));
+      // document.body.addEventListener('touchmove', function(evt) {
+      //     if(!evt._isScroller) {
+      //         evt.preventDefault();
+      //     }
+      // });
+
+
+      // $(document).ready(function(){
+      //   var app=document.getElementById("app");
+      //   var touchstartY;
+      //   app.addEventListener("touchstart",function(event){
+      //     var events=event.touches[0]||event;
+      //     touchstartY=events.clientY;//获取触摸目标在视口中的y坐标
+      //   },false);
+      //   app.addEventListener("touchmove",function(event){
+      //     var events=event.touches[0]||event;
+      //     //注意document.body.scrollTop始终为0
+      //     var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;//获取滚动部分的高度
+      //     var clientHeight=document.documentElement.clientHeight;//获取手机屏幕高度（可视部分高度）
+      //     var scrollHeight=document.body.scrollHeight;//所有内容的高度
+      //     if(events.clientY>touchstartY&&scrollTop===0&&event.cancelable){
+      //       event.preventDefault();//禁止到顶下拉
+      //     }else if(scrollTop+clientHeight>scrollHeight&&event.cancelable){
+      //       event.preventDefault();//禁止到底上拉
+      //     }
+      //   },false);
+      // })
+    </script>
+  </head>
+  <body>
+    <!-- <script src="jquery-1.11.3.min.js"></script> -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root" class="business_box"></div>
+    <style>
+</style>
+    <!-- <script>
+    var $document = $(document);
+    $window.scroll(function(){
+        var preHandler = function(e){e.preventDefault();}
+        if ($document.scrollTop() + $window.height() + 1 >= $document.height()) {
+            document.addEventListener('touchmove', preHandler, false);
+        } else {
+            document.removeEventListener('touchmove', preHandler, false);
+        }
+    });
+    </script> -->
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

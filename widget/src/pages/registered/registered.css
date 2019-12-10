@@ -1,0 +1,61 @@
+.am-list-item .am-input-extra {
+  max-height: 30px;
+}
+.navbar {
+  position:fixed;
+  width:100%;
+  background-color:transparent;
+  top:0px;
+}
+.register-header {
+  margin-top: 10%;
+}
+.code-button {
+  background-color: #990066;
+color: #ffffff;
+}
+.code-button::before {
+  border: 1px solid #990066 !important;
+}
+.am-button.am-button-disabled {
+  color: #ffffff;
+}
+.change-language{
+  position: absolute;
+  top: 7%;
+  right: 5%;
+}
+.change-language div{
+  float: right;
+  border: 1px solid #fff;
+  padding: 1px 5px;
+}
+::-moz-placeholder { color: #999999; }
+::-webkit-input-placeholder { color:#999999; }
+:-ms-input-placeholder { color:#999999; }
+
+.reg_bg{
+  width: 100%;
+  height: 1rem;
+  background: url("../../assets/red_bg.png") no-repeat;
+  background-size: 100% auto;
+}
+.red_head{
+  position: relative;
+}
+.red_head .img{
+  position: absolute;
+  bottom: -.35rem;
+  left: .15rem;
+  height: .75rem;
+  width: .75rem;
+}
+.red_head img{
+  height: 100%;
+  width: 100%;
+}
+/* 协议 */
+.protocol_content{
+  height: 3.825rem;
+  width: 3.43rem;
+}
