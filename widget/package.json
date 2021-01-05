@@ -10,7 +10,7 @@
     "antd-mobile": "^2.2.3",
     "antd-mobile-demo-data": "^0.2.0",
     "apicloud": "^1.0.4",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "copy-to-clipboard": "^3.0.8",
     "dtsmake": "0.0.10",
     "echarts": "^4.2.0-rc.2",
